@@ -1,0 +1,153 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  width: 350px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.head {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 20px;
+  min-height: 300px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 15px;
+}
+
+.box {
+  background: #e3eaf2;
+  border: 2px solid #c4d0db;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.box:hover {
+  background: #b9c6db;
+  border-color: #7a8ba6;
+  color: #1a2a48;
+}
+
+.box:active {
+  background: #a0b0c8;
+  border-color: #576b8a;
+  color: #0f1a2e;
+}
+
+.reset {
+  margin: 1.2rem auto 0;
+  background: #e3eaf2;
+  border: 2px solid #c4d0db;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.reset:hover {
+  background: #b9c6db;
+  border-color: #7a8ba6;
+  color: #1a2a48;
+}
+
+.winner-msg {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+.dark-toggle {
+  margin: 0 auto 1rem;
+  background: #e3eaf2;
+  border: 2px solid #c4d0db;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4d4c4c;
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-toggle:hover {
+  background: #b9c6db;
+  border-color: #7a8ba6;
+  color: #1a2a48;
+}
+
+/* 🔲 DARK MODE CLASSES */
+
+head.dark {
+  color: #ffffff;
+}
+
+body.dark {
+  background-color: #201c1c;
+  color: #f2f2f7;
+}
+
+main.dark {
+  background-color: #3a3a3c;
+  color: #f2f2f7;
+}
+
+.container.dark {
+  background-color: #3a3a3c;
+  color: #ffffff;
+}
